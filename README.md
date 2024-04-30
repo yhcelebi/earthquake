@@ -1,0 +1,2 @@
+# earthquake
+An Earthquake Project
