@@ -1,0 +1,14 @@
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "description": "earthquake desktop app powered by nextjs and electronjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "yhcelebi",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.1"
+  }
+}
