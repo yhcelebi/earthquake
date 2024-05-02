@@ -1,4 +1,4 @@
-#scraper.py
+#kandilli_scraper.py
 
 import requests
 import pandas as pd
