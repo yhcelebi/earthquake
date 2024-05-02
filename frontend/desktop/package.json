@@ -4,7 +4,8 @@
   "description": "earthquake desktop app powered by nextjs and electronjs",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "test",
+    "start": "electron ."
   },
   "author": "yhcelebi",
   "license": "ISC",
