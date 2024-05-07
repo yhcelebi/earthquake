@@ -1,20 +1,17 @@
-#models.py
+# models.py
 
-from uuid import uuid4
-from sqlalchemy import Column, Integer, String, Index
-from sqlalchemy.dialects.postgresql import UUID, BYTEA
-from database import Base
-from sqlalchemy import text
-from sqlalchemy.schema import DDL
+import datetime
+import uuid
 
-class Earthquake:
-    def __init__(self, id, date, latitude, longitude, depth, type, magnitude):
-        self.id = id
-        self.date = date
-        self.latitude = latitude
-        self.longitude = longitude
-        self.depth = depth
-        self.type = type
-        self.magnitude = magnitude
+from uuid import UUID
+from pydantic import BaseModel
 
 
+class EarthquakeBase(BaseModel):
+    id: UUID = uuid.uuid4()
+    date: str = f"{datetime.datetime(1999, 9, 10)}"
+    time: str = f"{datetime.time(3, 1)}"
+    depth: float = 15.0  # unit in kilometers
+    latitude: float = 41.015137
+    longitude: float = 28.979530
+    magnitude: float = 7.6
