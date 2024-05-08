@@ -1,9 +1,8 @@
 #kandilli_scraper.py
 
 import requests
-import pandas as pd
 from bs4 import BeautifulSoup
-
+from database import EarthquakeCreate
 
 # URL of the webpage to scrape
 url = 'http://www.koeri.boun.edu.tr/scripts/lst9.asp'
@@ -20,6 +19,7 @@ print("Response Headers:", response.headers)
 if response.status_code == 200:
     soup = BeautifulSoup(response.text, "html.parser")
     content = soup.find("pre")
+
     print(content)
 
 else:
