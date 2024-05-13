@@ -1,2 +1,0 @@
-#afad_scraper.py
-
