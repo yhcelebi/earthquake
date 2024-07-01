@@ -1,6 +1,8 @@
-certifi==2024.2.2
-gevent==24.2.1
-greenlet==3.0.3
-websocket==0.2.1
-zope.event==5.0
-zope.interface==6.3
+fastapi
+pydantic
+websockets
+uvicorn
+motor
+pymongo
+python-dotenv
+certifi
